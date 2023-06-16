@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user',
+    'workspace',
+    'project',
+    'task',
+    'meeting',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +80,7 @@ WSGI_APPLICATION = 'iti_PMS.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'NAME': BASE_DIR / 'db.sqlite3',
+    
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'pmsdb',
         'USER': 'pms_user',
